@@ -1,0 +1,13 @@
+.videolist {
+  flex: 1 0 200px;
+  padding: 15px;
+  background-color: #eee;
+  margin: 0 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.itemvideolist {
+  border: #000 1px solid;
+  margin-bottom: 10px;
+  height: 100px;
+}

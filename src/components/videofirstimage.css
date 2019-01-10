@@ -1,0 +1,8 @@
+.videofirstimage {
+  /* border: #000 1px solid; */
+}
+
+.videofirstimage img {
+  width: 100%;
+  display: block;
+}

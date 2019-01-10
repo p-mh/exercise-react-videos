@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Staatliches');
+
+.title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.title h1 {
+  font-family: 'Staatliches', sans-serif;
+}
+.searchbar {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  align-items: center;
+  border-radius: 15px;
+  border: #000 1px solid;
+  padding: 6px 10px;
+  max-width: 400px;
+  display: flex;
+}
+
+.searchbar input {
+  width: 50%;
+  margin-left: 10px;
+  border: none;
+  flex: 2;
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+.video {
+  flex: 2 1 500px;
+  margin: 0 10px 10px;
+}
+
+.itemvideo {
+  height: 100%;
+  min-height: 300px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.itemvideo iframe {
+  width: 100%;
+  height: 100%;
+}
+.videofirstimage {
+  /* border: #000 1px solid; */
+}
+
+.videofirstimage img {
+  width: 100%;
+  display: block;
+}
+.videolist {
+  flex: 1 0 200px;
+  padding: 15px;
+  background-color: #eee;
+  margin: 0 10px 10px 10px;
+  border-radius: 3px;
+}
+
+.itemvideolist {
+  border: #000 1px solid;
+  margin-bottom: 10px;
+  height: 100px;
+}
+.app {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.searchbarbloc {
+  margin: 30px 10px 40px;
+}
+
+.blocvideos {
+  display: flex;
+  flex-wrap: wrap;
+}

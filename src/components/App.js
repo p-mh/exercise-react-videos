@@ -11,9 +11,9 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      videos: [
-        'https://www.youtube.com/watch?v=Q6amwKTI9VY',
-        'https://www.youtube.com/watch?v=cggl4WN77Mw',
+      videosURL: [
+        'https://www.youtube.com/embed/Q6amwKTI9VY',
+        'https://www.youtube.com/embed/cggl4WN77Mw',
       ],
     };
   }
@@ -26,7 +26,7 @@ class App extends Component {
         </div>
         <div className="blocvideos">
           <Video />
-          <VideoList videos={} />
+          <VideoList videosURL={this.state.videosURL} />
         </div>
       </div>
     );

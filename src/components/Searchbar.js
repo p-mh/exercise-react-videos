@@ -7,7 +7,7 @@ class SearchBar extends Component {
     super(props);
 
     this.state = {
-      searchValue: null,
+      searchValue: '',
     };
   }
   onChangeInput(e) {
@@ -19,7 +19,7 @@ class SearchBar extends Component {
   render() {
     return (
       <div className="searchbar">
-        <i class="fas fa-search" />
+        <i className="fas fa-search" />
         <input
           type="text"
           placeholder="Search"

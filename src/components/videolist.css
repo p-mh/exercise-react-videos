@@ -6,6 +6,10 @@
   border-radius: 3px;
 }
 
+.videolist p {
+  margin: 0 0 15px;
+}
+
 .itemvideolist {
   border: #000 1px solid;
   margin-bottom: 10px;

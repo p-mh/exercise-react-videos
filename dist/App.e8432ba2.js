@@ -24625,7 +24625,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(SearchBar).call(this, props));
     _this.state = {
-      searchValue: null
+      searchValue: ''
     };
     return _this;
   }
@@ -24643,7 +24643,7 @@ function (_Component) {
       return _react.default.createElement("div", {
         className: "searchbar"
       }, _react.default.createElement("i", {
-        "class": "fas fa-search"
+        className: "fas fa-search"
       }), _react.default.createElement("input", {
         type: "text",
         placeholder: "Search",
@@ -24743,10 +24743,10 @@ require("./videolist.css");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-function VideoList() {
+function VideoList(props) {
   return _react.default.createElement("div", {
     className: "videolist"
-  }, _react.default.createElement("div", null, _react.default.createElement("div", {
+  }, _react.default.createElement("div", null, _react.default.createElement("p", null, "Il y a ", _react.default.createElement("b", null, props.videosURL.length), " vid\xE9os"), _react.default.createElement("div", {
     className: "itemvideolist"
   }), _react.default.createElement("div", {
     className: "itemvideolist"
@@ -24811,7 +24811,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(App).call(this, props));
     _this.state = {
-      videos: ['https://www.youtube.com/watch?v=Q6amwKTI9VY', 'https://www.youtube.com/watch?v=cggl4WN77Mw']
+      videosURL: ['https://www.youtube.com/embed/Q6amwKTI9VY', 'https://www.youtube.com/embed/cggl4WN77Mw']
     };
     return _this;
   }
@@ -24825,7 +24825,9 @@ function (_Component) {
         className: "searchbarbloc"
       }, _react.default.createElement(_Searchbar.default, null)), _react.default.createElement("div", {
         className: "blocvideos"
-      }, _react.default.createElement(_Video.default, null), _react.default.createElement(_Videolist.default, null)));
+      }, _react.default.createElement(_Video.default, null), _react.default.createElement(_Videolist.default, {
+        videosURL: this.state.videosURL
+      })));
     }
   }]);
 
@@ -24860,7 +24862,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "35821" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "43647" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
